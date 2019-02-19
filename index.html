@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+<div class="container">
+    <header>
+        <h1>Memory Game</h1>
+    </header>
+
+    <section class="score-panel">
+        <ul class="stars">
+            <!--stars go from left to right, class changes to fa-star-o when score is lost-->
+            <li><i class="fa fa-star" id="star-one"></i></li>
+            <li><i class="fa fa-star" id="star-two"></i></li>
+            <li><i class="fa fa-star" id="star-three"></i></li>
+        </ul>
+
+        <span class="moves">0</span> moves
+
+        <div class="restart">
+            <i class="fa fa-repeat"> Restart</i>
+        </div>
+
+        <div class="timer">
+            <i class="fa fa-clock-o"></i>
+        </div>
+
+        <span class="time-minutes">0</span> min <span class="time-seconds">0</span> sec
+
+    </section>
+
+
+    <ul class="deck">
+        <li class="card">
+            <i class="fa fa-diamond"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-paper-plane-o"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-anchor"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-bolt"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-cube"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-anchor"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-leaf"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-bicycle"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-diamond"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-bomb"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-leaf"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-bomb"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-bolt"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-bicycle"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-paper-plane-o"></i>
+        </li>
+        <li class="card">
+            <i class="fa fa-cube"></i>
+        </li>
+    </ul>
+</div>
+
+<div class="container modal-container">
+    <div id="modal" class="modal">
+        <div class="modal-box-content">
+            <i class="close-modal fa fa-times-circle-o fa-2x"></i>
+            <p class="modal-text first-text">You found every match!!</p>
+            <p class="modal-text score-text">Your score:</p>
+            <p class="modal-text">
+                <span class="modal-moves modal-text">0</span> moves
+            </p>
+            <p class="modal-text">
+                <span class="modal-time-minutes modal-text">0</span> min
+                <span class="modal-time-seconds modal-text">0</span> sec
+            </p>
+            <p class="modal-text">
+                <span class="modal-stars modal-text">-</span>
+            </p>
+            <span class="replay-button">Would you like to play again?</span>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/app.js"></script>
+</body>
+
+</html>
+
